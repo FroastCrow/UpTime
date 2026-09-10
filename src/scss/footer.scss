@@ -1,0 +1,131 @@
+@use "vars" as *;
+
+//Footer Section START
+.footer {
+    background-color: #070415;
+    padding: 18px 16px;
+    color: #9FA0B2;
+    font-size: 14px;
+
+    .footer-top {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 22px;
+        border-bottom: 1px solid rgba(124, 124, 157, 0.5);
+
+        .logo {
+            order: 1;   
+        }
+
+        span {
+            color: #8D909F;
+            order: 2;
+        }
+
+        .info-container { 
+            order: 3;
+        }
+
+        @include mediaDesktop($w1280) {
+            justify-content: flex-start;
+            span {
+                order: 3;
+                justify-self: flex-end;
+                margin: 0 0 0 auto;
+            }
+        
+            .info-container {
+                order: 2;   
+            }
+        }
+    }
+
+    .info-container {
+        @include mediaDesktopTablet($w1024, $w1280) {
+            width: 100%;
+
+            .info-list {
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+    }
+
+    .footer-bot {
+        padding: 7px 0;
+        @include mediaDesktop($w768) {
+            padding: 15px 0;   
+        }
+    }
+
+    .info-list {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 0 0 10px;
+        margin: 24px 0 0;
+        @include mediaDesktop($w1280) {
+            margin: 0;
+        }
+        
+        .info-item {
+            margin-bottom: 29px;
+            margin-right: 36px;
+            &:hover {
+                color: #fff;
+            }
+            &:last-child, &:nth-last-child(2) {
+                margin-bottom: 0;
+            }
+            &:nth-last-child(3) {
+                margin-right: 120px;
+            }
+
+            @include mediaDesktop($w425) {
+                &:nth-last-child(3) {
+                    margin-right: 36px;   
+                }
+            }
+            @include mediaDesktop($w1280) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .copyright-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        @include mediaDesktop($w768) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .copyright-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 0 0;
+        @include mediaDesktop($w768) {
+            margin: 0;
+        }
+
+        .list-item {
+            margin-right: 25px;
+            &:hover {
+                color: #fff;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+//Footer Section END

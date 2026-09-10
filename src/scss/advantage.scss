@@ -1,0 +1,201 @@
+@use "vars" as *;
+
+//Advantages Section START
+.advantages {
+    overflow: hidden;
+    padding: 65px 0 30px;
+    @include mediaDesktop($w1024) {
+        padding: 85px 0 30px;
+    }
+
+    .titles-block {
+        padding: 0 15%;
+        text-align: center;
+        @include mediaDesktop($w1920) {
+            padding: 0 10%;
+        }
+    }
+
+    .title {
+        color: #100C2C;
+        font-size: 27px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        @include mediaDesktop($w1024) {
+            font-size: 42px;
+            font-weight: 700;
+        }
+    }
+
+    .subtitle {
+        color: #66666D;
+
+        @include mediaDesktop($w1024) {
+            font-size: 20px;
+        }
+    }
+
+    .advantages-slider-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 1300px;
+        width: 100%;
+        padding: 0 20px;
+        overflow: hidden;
+        @include mediaDesktop($w1440) {
+            width: 100vw;
+        }
+
+        .swiper {
+            padding-top: 4px;
+            // padding: 0;
+            // padding: 0 2vw;
+            margin-top: 68px;
+            position: relative;
+            overflow: hidden;
+            // @include mediaDesktop($w1440) {
+                // padding: 0 4vw;
+                // padding: 0 8vw;
+                // margin-left: -7vw;
+                // margin-right: -8vw;
+            // }
+            // @include mediaDesktop($w1920) {
+            //     padding: 0 8vw;
+            // }
+            // @include mediaDesktop($w2560) {
+            //     padding: 0px 15vw;
+            // }
+
+            .swiper-wrapper {
+                margin-left: 0;
+                margin-right: 0;
+                @include mediaDesktop($w1440) {
+                    // margin-left: -7vw;
+                    // margin-right: -8vw;
+                }
+                @include mediaDesktop($w1920) {
+                    // margin-right: -12vw;
+                    // margin-left: -12vw;
+                }
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition-property: transform;
+        transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+        box-sizing: content-box;
+
+        .swiper-slide {
+            display: flex;
+            align-items: stretch;
+            height: auto;
+        }
+
+        .advantages-item {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            flex-shrink: 0;
+            width: 100%;
+            // max-width: 380px;
+            border: 1px solid #EBECF5;
+            box-shadow: 0 0px 0 0 #EBECF5;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 4px 0 0 #EBECF5;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .description {
+                padding: 16px 12px;
+                @include mediaDesktop($w1280) {
+                    padding: 24px;
+                }
+
+                .item-title {
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                }
+            }   
+        }
+    }
+
+    .slider-nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 16px;
+        margin-top: 24px;
+        // padding-right: 15px;
+        // @include mediaDesktop($w1366) {
+        //     padding-right: 0;
+        // }
+    }
+
+    .slider-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 37px;
+        height: 37px;
+        border-radius: 6px;
+        // box-shadow: inset 0 0 0 1px rgba(91, 98, 107, 0.4);
+        border: 1px solid rgba(91, 98, 107, 0.4);
+        // border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #597DFF;
+            // box-shadow: inset 0 0 0 1px #597DFF;
+            border-color: #597DFF;
+
+            .icon {
+                background-image: url("../images/slider-arrow-white.svg");
+            }
+        }
+
+        &:active {
+            background-color: #597DFF;
+            border-color: #FFF;
+            // box-shadow: inset 0 0 0 1px #fff;
+        }
+
+        &.swiper-button-disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            &:hover {
+                background-color: transparent;
+                box-shadow: inset 0 0 0 1px rgba(91, 98, 107, 0.4);
+                .icon {
+                    background-image: url("../images/slider-arrow-black.svg");   
+                }
+            }
+        }
+    }
+
+    .icon {
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/slider-arrow-black.svg");
+
+        &.arrow-left {
+            transform: rotate(-180deg);
+        }
+    }
+}
+//Advantages Section END

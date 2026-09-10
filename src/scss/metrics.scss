@@ -1,0 +1,109 @@
+@use "vars" as *;
+
+//Metrics Section START
+.metrics {
+    padding: 33px 16px 32px;
+    background-color: #597DFF;
+    color: #fff;
+    text-align: center;
+    @include mediaDesktop($w1280){
+        padding: 69px 16px;
+    }
+
+    .title {
+        padding: 0 15px;
+        font-size: 27px;
+        font-weight: 600;
+    }
+
+    .title, .subtitle {
+        margin: 0 0 19px;
+    }
+
+    .metrics-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        margin: 0 0 39px;
+        gap: 16px;
+        @include mediaDesktop($w1024) {
+            gap: 20px
+        }
+        @include mediaDesktop($w1366) {
+            gap: 39px;
+        }
+
+        .metrics-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            height: 150px;
+            padding: 5px 16px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            @include mediaDesktop($w1280) {
+                max-width: 406px;
+            }
+
+            &:hover {
+                background-color: #fff;
+
+                span {
+                    margin-bottom: 5px;
+                }
+
+                .icon {
+                    height: 0;
+                    opacity: 0;
+                    transform: translateY(-110%); 
+                    margin-top: -8px;
+                }
+
+                .description {
+                    max-height: 100%;
+                    opacity: 1;    margin-top: 0;
+                }
+            }
+        }
+
+        .item-title, .icon, .description {
+            transition: inherit;
+        }
+
+        span {
+            color: #020413;
+            font-size: 17px;
+            font-weight: 700;
+            @include mediaDesktop($w1024) {
+                font-size: 20px;
+            }
+        }
+
+        .icon {
+            width: 62px;
+            height: 62px;
+            flex-shrink: 0;
+        }
+
+        .description {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            margin-top: -8px;
+            color: #020413;
+            font-size: 14px;
+            @include mediaDesktop($w1024) {
+                font-size: 17px;
+            }
+        }
+    }
+}
+//Metrics Section END

@@ -1,0 +1,126 @@
+@use "vars" as *;
+
+//Monitoring Section START
+.monitoring {
+    padding: 0px 0 35px;
+    color: #fff;
+    background-image: url('../images/monitoring-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    @include mediaDesktop($w568) {
+        padding: 0px 0 40px;
+        // background: url('../images/monitor-img.webp') no-repeat top/80%, url('../images/monitoring-bg.webp') no-repeat center/cover;
+    }
+    @include mediaDesktop($w768) {
+        padding: 0px 0 40px;
+    }
+    @include mediaDesktop($w1024) {
+        padding: 226px 0 143px;
+        justify-content: center;
+        // background: url('../images/monitor-img.webp') no-repeat right/80%, url('../images/monitoring-bg.webp') no-repeat center/cover;
+        
+        &.flex-container {
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+    @include mediaDesktop($w1280) {
+        padding: 226px 0 243px;
+    }
+    @include mediaDesktop($w1920) {
+        padding: 270px 0;
+        // background: url('../images/monitor-img.webp') no-repeat right/70%, url('../images/monitoring-bg.webp') no-repeat center/cover;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    .monitor-img {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        align-self: self-end;
+        @include mediaDesktop($w768) {
+            width: 90%;
+        }
+        @include mediaDesktop($w1024) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto 0;
+            width: 75%;
+        }
+        @include mediaDesktop($w1440) {
+            width: 70%;
+        }
+        @include mediaDesktop($w1920) {
+            width: 65%;
+        }
+    }
+
+    .description {
+        position: relative;
+        z-index: 1;
+        padding: 0 16px;
+        @include mediaDesktop($w1024) {
+            // padding: 0 0 0 4%;
+            width: 40vw;
+        }
+        
+
+        .title {
+            margin: 0px 0 8px;
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 1.5;
+            @include mediaDesktop($w1024) {
+                font-size: 42px;
+                margin: 0 0 24px;
+            }
+        }
+
+        .subtitle {
+            margin: 0 0 34px;
+            @include mediaDesktop($w1024) {
+                font-size: 22px;
+                margin: 0 0 64px;
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include mediaDesktop($w568) {
+            flex-direction: row;
+        }
+
+        .button {
+            width: 100%;            
+            max-width: 288px;
+            &:first-child {
+                margin: 0 0 24px;
+            }
+
+            @include mediaDesktop($w568) {
+                &:first-child {
+                    margin: 0 24px 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+//Monitoring Section END

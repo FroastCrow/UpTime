@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uptime Click</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+</head>
+
+<body id="body" class="home">
+    <header id="header" class="header">
+        <div class="wrapper">
+            <a href="/" class="logo">
+                <img id="logoDefault" src="./images/logo-header.svg" alt="Uptime Click Logo">
+                <img id="logoScrolled" src="./images/logo-header-scroll.svg" alt="Uptime Click Logo">
+            </a>
+            <a class="burger-btn" id="burger-btn">
+                <i class="icon burger"></i>
+            </a>
+            <div class="links-container">
+                <ul class="links-list" id="linksList">
+                    <li class="list-item">
+                        <a href="#">Why Uptime Matters</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Features</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Use Cases</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Fast check</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+                <div class="right-block">
+                    <div class="custom-select-container" id="language-dropdown-container">
+                        <div class="burger-title">
+                            <span>language</span>
+                        </div>
+                        <div class="selected-text" id="selected-language-text" tabindex="0" aria-haspopup="listbox" aria-expanded="false">
+                            English
+                        </div>
+                        <ul class="select-options" id="language-options-list">
+                            <li class="custom-select-option selected">English</li>
+                            <li class="custom-select-option">Українська</li>
+                            <li class="custom-select-option">Deutsch</li>
+                            <li class="custom-select-option">Français</li>
+                            <li class="custom-select-option">Español</li>
+                        </ul>
+                    </div>
+                    <div class="buttons" id="headerButtons">
+                        <a target="_blank" href="https://google.com" id="signUpBtn" class="button bg-white">
+                            Sign up
+                        </a>
+                        <a target="_blank" href="https://google.com" id="signInBtn" class="button bg-trans">
+                            Sign in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-screen">
+        <div class="container">
+            <img class="circle" src="./images/circle-img.svg" alt="">
+            <div class="wrapper">
+                <h1>Real-time Monitoring for Your Website</h1>
+                <div class="subtitle">
+                    Ensure the seamless operation of your online business
+                </div>
+                <a target="_blank" href="https://google.com" class="button bg-green button__thin">
+                    Sign up now
+                </a>
+            </div>
+        </div>
+
+        <section class="float-block">
+            <div class="float-wrapper">
+                <div class="search-field">
+                    <input type="search" name="search" id="searchField" placeholder="Enter your website URL">
+                </div>
+                <a target="_blank" href="https://google.com" class="button bg-blue">
+                    Check Now
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <section class="advantages">
+        <div class="flex-container">
+            <div class="titles-block container">
+                <div class="title">A non-functioning company website can lead to significant losses</div>
+                <div class="subtitle">You may not even know that your website is down (even for a short time)</div>
+            </div>
+            <div class="advantages-slider-wrapper">
+                <div class="swiper" id="swiper-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="advantages-item">
+                                <img src="./images/adv-img-1.webp" alt="adv-img-1">
+                                <div class="description">
+                                    <div class="item-title">Loss of Clients and Revenue</div>
+                                    <div class="item-text">In a highly competitive environment, an inaccessible website can lead to
+                                        a
+                                        significant loss of clients. Buyers expect
+                                        instant access to information and products. If your website is unavailable, they will
+                                        quickly move
+                                        to
+                                        competitors,
+                                        resulting in direct losses</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantages-item">
+                                <img src="./images/adv-img-2.webp" alt="adv-img-2">
+                                <div class="description">
+                                    <div class="item-title">Damage to Reputation</div>
+                                    <div class="item-text">Business reputation plays a key role. A non-functioning website can cause
+                                        negative
+                                        reviews and comments on social
+                                        networks and online platforms. One bad impression can drive away many potential clients
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantages-item">
+                                <img src="./images/adv-img-3.webp" alt="adv-img-3">
+                                <div class="description">
+                                    <div class="item-title">SEO and Ranking Issues</div>
+                                    <div class="item-text">Search engine algorithms take website availability into account when
+                                        ranking.
+                                        Frequent downtime can lead to lower
+                                        positions in search results, reducing organic traffic and making it harder to attract new
+                                        clients
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantages-item">
+                                <img src="./images/adv-img-4.webp" alt="adv-img-4">
+                                <div class="description">
+                                    <div class="item-title">Data Security</div>
+                                    <div class="item-text">Under strict data protection standards, a non-functioning or vulnerable
+                                        website
+                                        can become an easy target for hackers. A breach of confidential information and client data
+                                        not only violates data protection laws but also
+                                        seriously undermines client trust
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantages-item">
+                                <img src="./images/adv-img-5.webp" alt="adv-img-5">
+                                <div class="description">
+                                    <div class="item-title">Loss of Competitive Advantage</div>
+                                    <div class="item-text">Today's market demands constant readiness from businesses. Every minute
+                                        of your
+                                        website's downtime is an opportunity for
+                                        competitors to win over your clients. Quick detection and resolution of issues allow you to
+                                        maintain
+                                        a
+                                        leading position</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantages-item"><img src="./images/adv-img-6.webp" alt="adv-img-6">
+                                <div class="description">
+                                    <div class="item-title">Financial and Legal Risks</div>
+                                    <div class="item-text">Website downtime can lead to significant financial losses not only due to
+                                        missed
+                                        profits but also due to potential
+                                        lawsuits and fines. Clients and partners have high expectations for the reliability and
+                                        availability
+                                        of
+                                        online services</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantages-item">
+                                <img src="./images/adv-img-7.webp" alt="adv-img-7">
+                                <div class="description">
+                                    <div class="item-title">Loss of Trust from Investors and Partners</div>
+                                    <div class="item-text">Investors and partners value stability and reliability. Constant issues
+                                        with
+                                        website
+                                        availability can erode their trust,
+                                        negatively impacting funding and growth opportunities for your business</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav container">
+                <button id="swiper-button-prev" class="slider-btn" aria-label="Previous slide" type="button">
+                    <i class="icon arrow-left"></i>
+                </button>
+                <button id="swiper-button-next" class="slider-btn" aria-label="Next slide" type="button">
+                    <i class="icon arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="metrics">
+        <div class="container flex-container">
+            <div class="title">Monitor Key Site Metrics</div>
+            <div class="subtitle">Our monitoring system helps you keep track of your websites' status. After registration, you can
+                add sites for <br><strong>regular monitoring.</strong>
+            </div>
+            <ul class="metrics-list">
+                <li class="metrics-item">
+                    <img class="icon" src="./images/ico-signal.svg" alt="" >
+                    <span>General Availability</span>
+                    <div class="description ">Ensures that your website is accessible and all its features are working
+                        correctly</div>
+                </li>
+                <li class="metrics-item">
+                    <img class="icon" src="./images/ico-errors.svg" alt="" >
+                    <span>System Errors</span>
+                    <div class="description ">Detects and alerts you about any system errors that could impact the user
+                        experience or site performance</div>
+                </li>
+                <li class="metrics-item">
+                    <img class="icon" src="./images/ico-shield.svg" alt="" >
+                    <span>Google Safe Browsing alerts</span>
+                    <div class="description ">Verifies that your website is not listed as unsafe by Google Safe Browsing,
+                        protecting your visitors from potential threats</div>
+                </li>
+                <li class="metrics-item">
+                    <img class="icon" src="./images/ico-certificate.svg" alt="" >
+                    <span>SSL Certificate Validity</span>
+                    <div class="description ">Checks the status and expiration date of your SSL certificate to ensure
+                        secure communication and avoid disruptions</div>
+                </li>
+                <li class="metrics-item">
+                    <img class="icon" src="./images/ico-calendar.svg" alt="" >
+                    <span>Domain Expiration Date</span>
+                    <div class="description ">Monitors the expiration date of your domain to prevent unintentional
+                        downtime due to expired domain registration</div>
+                </li>
+                <li class="metrics-item">
+                    <img class="icon" src="./images/ico-time.svg" alt="" >
+                    <span>Check up every 15 minutes</span>
+                    <div class="description ">Conducts regular checks every 15 minutes to promptly detect and respond to
+                        any issues that may arise</div>
+                </li>
+                <li class="metrics-item">
+                    <img class="icon" src="./images/ico-planet.svg" alt="" >
+                    <span>Availability Checks in Different Countries</span>
+                    <div class="description ">Verifies your website’s availability from multiple locations worldwide to
+                        ensure global accessibility and performance</div>
+                </li>
+                <li class="metrics-item">
+                    <img class="icon" src="./images/ico-speed.svg" alt="" >
+                    <span>PageSpeed Insights</span>
+                    <div class="description ">Analyze your website's loading speed and identify key metrics to improve
+                        user experience and SEO performance</div>
+                </li>
+                <li class="metrics-item">
+                    <img class="icon" src="./images/ico-redirect.svg" alt="" >
+                    <span>Redirect Checker</span>
+                    <div class="description ">Verify the accuracy and status codes of your website's redirects to ensure
+                        seamless navigation and avoid broken links</div>
+                </li>
+            </ul>
+            <a target="_blank" href="https://google.com" class="button bg-green regular">
+                Get started
+            </a>
+        </div>
+    </section>
+
+    <section class="benefits flex-container">
+        <div class="title">Who can benefit from our service</div>
+
+        <ul class="benefits-list">
+            <li class="benefits-item">
+                <img src="./images/benefit-img-1.webp" alt="benefit-img-1">
+                <div class="description">
+                    <div class="item-title">Small and medium-sized businesses owners</div>
+                    <div class="item-text">Ensure uninterrupted operation and security of your resources. Our system helps you monitor your site's functionality,
+                    detect errors, and receive real-time alerts</div>
+                    <a href="#" class="item-link">
+                        <span>Register now</span>
+                        <i class="icon arrow"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="benefits-item">
+                <img src="./images/benefit-img-2.webp" alt="benefit-img-2">
+                <div class="description">
+                    <div class="item-title">Online Stores and E-Commerce Platforms</div>
+                    <div class="item-text">Constantly check the performance of your trackers, landing pages, or offers. Stay ahead with regular monitoring and
+                    instant notifications of any issues</div>
+                    <a href="#" class="item-link">
+                        <span>Get started free</span>
+                        <i class="icon arrow"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="benefits-item">
+                <img src="./images/benefit-img-3.webp" alt="benefit-img-3">
+                <div class="description">
+                    <div class="item-title">Bloggers and Content Creators</div>
+                    <div class="item-text">Guarantee the stability and security of your projects. Use our monitoring system to detect problems early and keep your
+                    websites running smoothly</div>
+                    <a href="#" class="item-link">
+                        <span>Start monitoring</span>
+                        <i class="icon arrow"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="benefits-item">
+                <img src="./images/benefit-img-4.webp" alt="benefit-img-4">
+                <div class="description">
+                    <div class="item-title">Startups</div>
+                    <div class="item-text">Stay agile and reliable from the start. Our monitoring system helps early-stage teams ensure their web services remain
+                    available, giving peace of mind to both you and your first users</div>
+                    <a href="#" class="item-link">
+                        <span>Launch your trial</span>
+                        <i class="icon arrow"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="benefits-item">
+                <img src="./images/benefit-img-5.webp" alt="benefit-img-5">
+                <div class="description">
+                    <div class="item-title">Web Development and Maintenance Agencies</div>
+                    <div class="item-text">Monitor client websites efficiently. Our system provides comprehensive checks, helping you maintain high service quality
+                    and customer satisfaction</div>
+                    <a href="#" class="item-link">
+                        <span>Create account</span>
+                        <i class="icon arrow"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="benefits-item">
+                <img src="./images/benefit-img-6.webp" alt="benefit-img-6">
+                <div class="description">
+                    <div class="item-title">Digital Marketers</div>
+                    <div class="item-text">Track the availability and functionality of client websites. Ensure your clients' sites are always accessible and
+                    performing optimally with our reliable monitoring solutions</div>
+                    <a href="#" class="item-link">
+                        <span>Sign up for insights </span>
+                        <i class="icon arrow"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contactUs">
+        <div class="touch-block">
+            <div class="title">Get in Touch!<br> We’re always ready to assist you in achieving your digital goals</div>
+            <a target="_blank" href="https://google.com" class="button bg-green" id="contact-us">
+                Contact us
+            </a>
+        </div>
+        <div class="links-block">
+            <div class="title">Alternatively, you can contact us directly via:</div>
+            <div class="links">
+                <a target="_blank" href="mailto:sales@syntrex-digital.com" class="link">
+                    <i class="icon mail"></i>
+                    <span>sales@syntrex-digital.com</span>
+                </a>
+                <a target="_blank" href="https://t.me/@syntrex-digital" class="link">
+                    <i class="icon telegram"></i>
+                    <span>@syntrex-digital</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="monitoring">
+        <div class="container">
+            <img class="monitor-img" src="./images/monitor-img.webp" alt="monitor-img">
+            <div class="description">
+                <div class="title">Start Monitoring Your Websites Today!</div>
+                <div class="subtitle">Sign in or register to get started with our monitoring system</div>
+                <div class="buttons">
+                    <a target="_blank" href="https://google.com" class="button bg-green">
+                        Sign up
+                    </a>
+                    <a target="_blank" href="https://google.com" class="button bg-trans">
+                        Sign in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="/" class="logo">
+                    <img src="./images/logo-footer.svg" alt="Uptime Click Logo">
+                </a>
+                <span>All rights reserved</span>
+                <div class="info-container">
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <a href="https://google.com" class="info-link">
+                                Why Uptime Matters
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="https://google.com" class="info-link">
+                                Features
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="https://google.com" class="info-link">
+                                Use Cases
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="https://google.com" class="info-link">
+                                Fast check
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="https://google.com" class="info-link">
+                                Contact us
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="https://google.com" class="info-link">
+                                Sign up
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="https://google.com" class="info-link">
+                                Sign in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="copyright-container">
+                    <p class="copyright-text">
+                        Syntrex Digital Limited © 2024
+                    </p>
+                    <ul class="copyright-list">
+                        <li class="list-item">
+                            <a href="https://google.com" class="list-link">Cookie preferences</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="https://google.com" class="list-link">Terms of use</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="https://google.com" class="list-link">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="modal" id="modal">
+        <div class="modal-body">
+            <div class="modal-header">
+                <a class="close-icon">
+                    <i class="icon close"></i>
+                </a>
+            </div>
+            <div class="modal-content">
+                <div class="title">We will contact you in a few minutes</div>
+                <form>
+                    <div class="form-wrapper">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="fname">Your name *</label>
+                                <input type="text" id="fname" placeholder="John Doe">
+                            </div>
+                            <div class="form-col">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" placeholder="Tech Innovators Inc.">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="website">Website</label>
+                                <input type="text" id="website" placeholder="www.techinnovators.com">
+                            </div>
+                            <div class="form-col">
+                                <label for="email">Your email *</label>
+                                <input type="email" id="email" placeholder="contact@innotech.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-col textarea">
+                                <label for="message">Message *</label>
+                                <textarea name="message" id="message" placeholder="Your message..."></textarea>
+                                <span>Fields marked with an asterisk (*) are required</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="button bg-green submit-btn" id="send-btn">
+                        SEND
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+@use "vars" as *;
+
+//ContactUs Section START
+.contactUs,
+.touch-block,
+.links-block {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contactUs {
+    padding: 32px 16px;
+    background-color: #EFF2FC;
+    text-align: center;
+    @include mediaDesktop($w1280){
+        padding: 51px 16px;
+    }
+
+    .title {
+        margin: 0 0 18px;
+        @include mediaDesktop($w1024) {
+            font-size: 22px;
+        }
+    }
+
+    .touch-block {
+        width: 100%;
+        max-width: 1080px;
+        padding: 24px 32px;
+        margin: 0 0 22px;
+        background-color: #fff;
+        border: 1px solid #DADCE0;
+        border-radius: 6px;
+    }
+
+    .links-block {
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #100C2C;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 32px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            @include mediaDesktop($w1024) {
+                margin: 0 60px 0 0;
+            }
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            margin: 0 10px 0 0;
+
+            &.mail {
+                background-image: url("../images/ico-mail.svg");
+            }
+
+            &.telegram {
+                background-image: url("../images/ico-telegram.svg");
+            }
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        @include mediaDesktop($w1024) {
+            flex-direction: row;
+        }
+    }
+}
+
+
+//ContactUs Section END

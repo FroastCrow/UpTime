@@ -1,0 +1,30 @@
+@use "vars" as *;
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+    padding: 120px 10px;
+    h1 {
+        color: #020413;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 18px;
+        @include mediaDesktop($w1280) {
+            font-size: 42px;
+            margin-bottom: 28px;
+        }
+    }
+
+    img {
+        margin-bottom: 24px;
+        width: 100%;
+        max-width: 670px;
+        @include mediaDesktop($w1280) {
+            margin-bottom: 54px;
+        }
+    }
+} 
